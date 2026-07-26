@@ -30,8 +30,8 @@ export default function Contact() {
                   <Phone className="w-5 h-5 text-blue-600" />
                 </div>
                 <div>
-                  <strong className="block text-slate-800 mb-1 text-sm">Phone Number</strong>
-                  <span className="text-slate-500 text-sm">7889566607</span>
+<strong className="block text-slate-800 mb-1 text-sm">Phone Number</strong>
+                  <span className="text-slate-500 text-sm">+91 7889566607</span>
                 </div>
               </div>
 

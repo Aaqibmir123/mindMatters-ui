@@ -88,31 +88,31 @@ const drWaris = {
       day: "Monday (Full Day)",
       clinic: "Panacea Medicate",
       address: "Near New Bus Stand, Link Road to Bypass, Handwara",
-      phone: ["9103890115", "7780864382"]
+phone: ["+91 9103890115", "+91 7780864382"]
     },
     {
       day: "Tuesday & Friday",
       clinic: "Haroon Medicate",
       address: "Firdous Abad Chowk, Tengpora Srinagar",
-      phone: ["7889449550", "7889566607"]
+phone: ["+91 7889449550", "+91 7889566607"]
     },
     {
       day: "Thursday (Full Day)",
       clinic: "Alkeemiya",
       address: "Kanlibagh, Baramulla",
-      phone: ["7006859785"]
+phone: ["+91 7006859785"]
     },
     {
       day: "Saturday & Sunday",
       clinic: "Saaya Medicate",
       address: "H/O Bohipora College Road, Opp. New Bus Stand, Regipora, Kupwara",
-      phone: ["9596764366", "7780864382"]
+phone: ["+91 9596764366", "+91 7780864382"]
     },
     {
       day: "Wednesday",
       clinic: "New Arafath Medicate Bandipora",
       address: "Near Fish Market, Nowpora",
-      phone: ["7006336261", "9858344090"]
+phone: ["+91 7006336261", "+91 9858344090"]
     }
   ]
 };
@@ -280,10 +280,10 @@ export default function DrWaris() {
 
                         {/* Phone Actions */}
                         <div className="pt-3 border-t border-slate-100 space-y-1.5">
-                          {clinic.phone.map((phone, pIdx) => (
+{clinic.phone.map((phone, pIdx) => (
                             <a 
                               key={pIdx} 
-                              href={`tel:${phone}`}
+                              href={`tel:${phone.replace(/\s/g, '')}`}
                               className="text-xs text-blue-700 hover:text-blue-900 font-semibold flex items-center justify-between bg-white hover:bg-blue-50/80 border border-slate-200/80 px-3 py-1.5 rounded-lg transition-colors group"
                             >
                               <span className="flex items-center gap-2">
