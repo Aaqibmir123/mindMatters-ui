@@ -1,3 +1,5 @@
+"use client";
+import React from 'react';
 import { Users, UserPlus, Award, Building } from "lucide-react";
 
 const stats = [
@@ -9,27 +11,51 @@ const stats = [
 
 export default function StatsBanner() {
   return (
-    <section className="bg-gradient-to-r from-cyan-600 via-blue-600 to-blue-700 py-12 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-        <div>
-          <span className="text-xs font-bold uppercase tracking-widest text-cyan-200">Our Impact</span>
-          <h2 className="text-2xl sm:text-3xl font-bold mt-1">Making a Difference Every Day</h2>
+    <section className="relative overflow-hidden bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-700 py-12 sm:py-16 text-white">
+      {/* Background Glow Decorations */}
+      <div className="absolute top-0 left-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-cyan-400/20 rounded-full blur-3xl pointer-events-none -z-0" />
+      <div className="absolute bottom-0 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-indigo-400/20 rounded-full blur-3xl pointer-events-none -z-0" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 sm:space-y-10 z-10">
+        
+        {/* Section Header */}
+        <div className="space-y-1.5 max-w-xl mx-auto">
+          <span className="inline-block text-[11px] sm:text-xs font-bold uppercase tracking-widest text-cyan-200 bg-white/10 border border-white/15 px-3 py-1 rounded-full backdrop-blur-md">
+            Our Impact
+          </span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white">
+            Making a Difference Every Day
+          </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-y md:divide-y-0 md:divide-x divide-white/20">
+        {/* Responsive Grid */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-6 lg:gap-8">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
-              <div key={index} className="flex flex-col items-center pt-4 md:pt-0">
-                <div className="flex items-center gap-3">
-                  <Icon className="w-8 h-8 text-cyan-200" />
-                  <span className="text-3xl font-extrabold">{stat.value}</span>
+              <div
+                key={index}
+                className="group flex flex-col items-center justify-center p-5 sm:p-6 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/15 backdrop-blur-md shadow-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                {/* Icon & Value Container */}
+                <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
+                  <div className="p-2.5 sm:p-3 rounded-xl bg-cyan-400/20 text-cyan-200 group-hover:scale-110 group-hover:bg-cyan-400/30 transition-all duration-300">
+                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
+                  </div>
+                  <span className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white">
+                    {stat.value}
+                  </span>
                 </div>
-                <p className="text-xs text-blue-100 font-medium mt-1">{stat.label}</p>
+
+                {/* Label */}
+                <p className="text-xs sm:text-sm text-blue-100 font-medium mt-2 text-center">
+                  {stat.label}
+                </p>
               </div>
             );
           })}
         </div>
+
       </div>
     </section>
   );

@@ -1,6 +1,23 @@
+"use client";
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Phone, Calendar, Award, Stethoscope, Building2, Clock, Brain, HeartPulse, Users, Shield, Activity, Smile, Baby } from "lucide-react";
+import { 
+  MapPin, 
+  Phone, 
+  Calendar, 
+  Award, 
+  Stethoscope, 
+  Building2, 
+  Clock, 
+  Brain, 
+  HeartPulse, 
+  Users, 
+  Shield, 
+  Activity, 
+  Smile, 
+  Baby,
+  ChevronRight
+} from "lucide-react";
 
 const drWaris = {
   name: "Dr. Waris Ahmad Zargar",
@@ -76,12 +93,12 @@ const drWaris = {
     {
       day: "Tuesday & Friday",
       clinic: "Haroon Medicate",
-      address: "Firdous Abad Chowk, Chingpora, Srinagar",
+      address: "Firdous Abad Chowk, Tengpora Srinagar",
       phone: ["7889449550", "7889566607"]
     },
     {
       day: "Thursday (Full Day)",
-      clinic: "Alkeemiya",
+      clinic: "Kantibagh",
       address: "Kanlibagh, Baramulla",
       phone: ["7006859785"]
     },
@@ -102,68 +119,114 @@ const drWaris = {
 
 export default function DrWaris() {
   return (
-    <section id="dr-waris" className="py-20 bg-gradient-to-br from-blue-50 via-cyan-50 to-indigo-50 relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-200 rounded-full opacity-20 -translate-y-32 translate-x-32"></div>
-      <div className="absolute bottom-0 left-0 w-48 h-48 bg-blue-200 rounded-full opacity-20 translate-y-24 -translate-x-24"></div>
+    <section id="dr-waris" className="py-12 sm:py-16 lg:py-24 bg-gradient-to-b from-slate-50 via-blue-50/40 to-slate-50 relative overflow-hidden">
       
+      {/* Decorative Blur Orbs */}
+      <div className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-cyan-200/40 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute bottom-0 left-0 w-72 sm:w-96 h-72 sm:h-96 bg-blue-200/40 rounded-full blur-3xl pointer-events-none -z-10" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="text-center mb-12">
-          <span className="text-xs font-bold text-cyan-600 uppercase tracking-widest block mb-2">Chief Consultant</span>
-          <h2 className="text-4xl font-bold text-blue-900 mb-4">Dr. Waris Ahmad Zargar</h2>
-          <div className="w-20 h-1 bg-cyan-500 mx-auto rounded-full"></div>
+        
+        {/* Section Heading */}
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+          <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold bg-cyan-100 text-cyan-800 tracking-wider uppercase mb-3">
+            Chief Consultant Profile
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+            {drWaris.name}
+          </h2>
+          <div className="w-16 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 mx-auto rounded-full mt-4" />
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <Card className="overflow-hidden shadow-2xl border-0 bg-white/90 backdrop-blur-sm">
+          <Card className="overflow-hidden shadow-xl sm:shadow-2xl border border-slate-100 bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl">
             <CardContent className="p-0">
-              {/* Doctor Profile Header */}
-              <div className="bg-gradient-to-r from-blue-600 to-cyan-600 p-8 text-white relative">
-                <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-                  <div className="relative">
-                    <img 
-                      src={drWaris.img} 
-                      alt={drWaris.name} 
-                      className="w-40 h-40 rounded-full object-cover shadow-2xl ring-4 ring-white/30" 
-                    />
-                    <div className="absolute -bottom-2 -right-2 bg-white rounded-full p-2 shadow-lg">
-                      <Award className="w-6 h-6 text-cyan-600" />
+              
+              {/* Doctor Profile Top Header Banner */}
+              <div className="bg-gradient-to-r from-slate-900 via-blue-900 to-cyan-900 p-6 sm:p-10 text-white relative">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6">
+                  
+                  {/* Doctor Image Container */}
+                  <div className="relative shrink-0">
+                    <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full p-1 bg-gradient-to-tr from-cyan-400 to-blue-400 shadow-xl">
+                      <img 
+                        src={drWaris.img} 
+                        alt={drWaris.name} 
+                        className="w-full h-full rounded-full object-cover" 
+                      />
+                    </div>
+                    <div className="absolute bottom-1 right-1 bg-cyan-500 text-white p-2 rounded-full shadow-lg border-2 border-white">
+                      <Award className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
                   </div>
-                  <div className="flex-1 text-center md:text-left">
-                    <h3 className="font-bold text-3xl mb-2">{drWaris.name}</h3>
-                    <p className="text-blue-100 text-sm font-medium mb-3">{drWaris.degree}</p>
-                    <span className="inline-block bg-white/20 text-white text-sm font-semibold px-4 py-2 rounded-full mb-3 backdrop-blur-sm">
-                      {drWaris.role}
-                    </span>
-                    <p className="text-blue-100 text-sm">{drWaris.exp}</p>
+
+                  {/* Doctor Profile Details */}
+                  <div className="flex-1 space-y-2.5">
+                    <div>
+                      <h3 className="font-extrabold text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight">
+                        {drWaris.name}
+                      </h3>
+                      <p className="text-cyan-200 text-xs sm:text-sm font-medium mt-1 leading-relaxed max-w-2xl">
+                        {drWaris.degree}
+                      </p>
+                    </div>
+
+                    <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-cyan-100 text-xs sm:text-sm font-semibold px-3.5 py-1.5 rounded-full backdrop-blur-md">
+                      <Stethoscope className="w-4 h-4 text-cyan-400 shrink-0" />
+                      <span>{drWaris.role}</span>
+                    </div>
+
+                    <p className="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-3xl pt-1">
+                      {drWaris.exp}
+                    </p>
+
+                    <div className="pt-2">
+                      <span className="text-[11px] font-semibold text-cyan-300 bg-cyan-950/60 border border-cyan-800 px-3 py-1 rounded-md inline-block">
+                        {drWaris.reg}
+                      </span>
+                    </div>
                   </div>
+
                 </div>
               </div>
 
-              {/* Doctor Details */}
-              <div className="p-8 space-y-6">
-                <div className="flex items-start gap-3">
-                  <Stethoscope className="w-5 h-5 text-cyan-600 mt-1 shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-slate-800 mb-2">Specializations</h4>
-                  </div>
-                </div>
+              {/* Main Info Body Section */}
+              <div className="p-6 sm:p-10 space-y-10">
                 
-                {/* Specialties Grid */}
-                <div className="border-t pt-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {/* Specializations Section */}
+                <div>
+                  <div className="flex items-center gap-2.5 mb-6">
+                    <div className="p-2 bg-cyan-50 text-cyan-600 rounded-lg">
+                      <Stethoscope className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-slate-900 text-lg sm:text-xl">
+                        Specializations & Treatments
+                      </h4>
+                      <p className="text-xs text-slate-500">Clinical expertise and areas of special care</p>
+                    </div>
+                  </div>
+                  
+                  {/* Specialties Responsive Grid */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4">
                     {drWaris.specialties.map((specialty, idx) => {
                       const Icon = specialty.icon;
                       return (
-                        <div key={idx} className="bg-white p-4 rounded-xl border border-slate-200 hover:shadow-lg hover:border-cyan-300 transition-all group">
+                        <div 
+                          key={idx} 
+                          className="bg-slate-50/70 hover:bg-white p-4 rounded-xl border border-slate-100 hover:border-cyan-200 shadow-xs hover:shadow-md transition-all duration-200 group flex flex-col justify-between"
+                        >
                           <div className="flex items-start gap-3">
-                            <div className="w-10 h-10 rounded-lg bg-cyan-50 text-cyan-600 flex items-center justify-center shrink-0 group-hover:bg-cyan-600 group-hover:text-white transition-colors">
-                              <Icon className="w-5 h-5" />
+                            <div className="w-9 h-9 rounded-lg bg-cyan-100/60 text-cyan-700 flex items-center justify-center shrink-0 group-hover:bg-cyan-600 group-hover:text-white transition-colors duration-200">
+                              <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
                             </div>
                             <div>
-                              <h5 className="font-bold text-slate-800 text-sm mb-1 group-hover:text-cyan-700 transition-colors">{specialty.title}</h5>
-                              <p className="text-xs text-slate-500 leading-relaxed">{specialty.description}</p>
+                              <h5 className="font-bold text-slate-800 text-sm mb-1 group-hover:text-cyan-700 transition-colors">
+                                {specialty.title}
+                              </h5>
+                              <p className="text-xs text-slate-500 leading-relaxed">
+                                {specialty.description}
+                              </p>
                             </div>
                           </div>
                         </div>
@@ -171,58 +234,78 @@ export default function DrWaris() {
                     })}
                   </div>
                 </div>
-                
-                <div className="flex items-center gap-3">
-                  <Award className="w-5 h-5 text-cyan-600 shrink-0" />
-                  <p className="text-sm text-slate-500 font-medium">{drWaris.reg}</p>
-                </div>
 
-                {/* Clinic Availability Cards */}
-                <div className="border-t pt-6">
-                  <div className="flex items-center gap-2 mb-4">
-                    <Calendar className="w-5 h-5 text-cyan-600" />
-                    <h4 className="font-bold text-slate-800 text-lg">Clinic Schedule & Availability</h4>
+                {/* Clinic Schedule Section */}
+                <div className="pt-8 border-t border-slate-100">
+                  <div className="flex items-center gap-2.5 mb-6">
+                    <div className="p-2 bg-blue-50 text-blue-600 rounded-lg">
+                      <Calendar className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-slate-900 text-lg sm:text-xl">
+                        Clinic Schedule & Locations
+                      </h4>
+                      <p className="text-xs text-slate-500">Visiting days and contact details across clinics</p>
+                    </div>
                   </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* Availability Grid */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {drWaris.availability.map((clinic, idx) => (
-                      <div key={idx} className="bg-gradient-to-br from-blue-50 to-cyan-50 p-5 rounded-xl border border-blue-100 hover:shadow-lg transition-all">
-                        <div className="flex items-center gap-2 mb-3">
-                          <Clock className="w-4 h-4 text-cyan-600" />
-                          <span className="font-semibold text-cyan-700 text-sm bg-cyan-100 px-3 py-1 rounded-full">
-                            {clinic.day}
-                          </span>
+                      <div 
+                        key={idx} 
+                        className="bg-gradient-to-b from-blue-50/50 to-white p-5 rounded-2xl border border-blue-100/80 hover:border-blue-300 shadow-xs hover:shadow-md transition-all duration-200 flex flex-col justify-between"
+                      >
+                        <div>
+                          {/* Day Pill */}
+                          <div className="flex items-center gap-1.5 mb-3">
+                            <Clock className="w-3.5 h-3.5 text-cyan-600" />
+                            <span className="font-bold text-xs text-cyan-800 bg-cyan-100/80 px-2.5 py-0.5 rounded-full">
+                              {clinic.day}
+                            </span>
+                          </div>
+
+                          {/* Clinic Name */}
+                          <div className="flex items-center gap-2 mb-2">
+                            <Building2 className="w-4 h-4 text-blue-600 shrink-0" />
+                            <span className="font-bold text-slate-900 text-sm">{clinic.clinic}</span>
+                          </div>
+
+                          {/* Address */}
+                          <div className="flex items-start gap-2 mb-4">
+                            <MapPin className="w-4 h-4 text-slate-400 mt-0.5 shrink-0" />
+                            <span className="text-xs text-slate-600 leading-snug">{clinic.address}</span>
+                          </div>
                         </div>
-                        <div className="space-y-2">
-                          <div className="flex items-center gap-2">
-                            <Building2 className="w-4 h-4 text-blue-600" />
-                            <span className="font-bold text-slate-800">{clinic.clinic}</span>
-                          </div>
-                          <div className="flex items-start gap-2">
-                            <MapPin className="w-4 h-4 text-blue-600 mt-0.5 shrink-0" />
-                            <span className="text-sm text-slate-600">{clinic.address}</span>
-                          </div>
-                          <div className="flex flex-col gap-1.5 pt-2">
-                            {clinic.phone.map((phone, pIdx) => (
-                              <a 
-                                key={pIdx} 
-                                href={`tel:${phone}`}
-                                className="text-xs text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-lg shadow-sm hover:bg-blue-50 transition-colors"
-                              >
-                                <Phone className="w-3.5 h-3.5" />
+
+                        {/* Phone Actions */}
+                        <div className="pt-3 border-t border-slate-100 space-y-1.5">
+                          {clinic.phone.map((phone, pIdx) => (
+                            <a 
+                              key={pIdx} 
+                              href={`tel:${phone}`}
+                              className="text-xs text-blue-700 hover:text-blue-900 font-semibold flex items-center justify-between bg-white hover:bg-blue-50/80 border border-slate-200/80 px-3 py-1.5 rounded-lg transition-colors group"
+                            >
+                              <span className="flex items-center gap-2">
+                                <Phone className="w-3.5 h-3.5 text-blue-600" />
                                 {phone}
-                              </a>
-                            ))}
-                          </div>
+                              </span>
+                              <ChevronRight className="w-3 h-3 text-slate-400 group-hover:translate-x-0.5 transition-transform" />
+                            </a>
+                          ))}
                         </div>
+
                       </div>
                     ))}
                   </div>
+
                 </div>
+
               </div>
             </CardContent>
           </Card>
         </div>
+
       </div>
     </section>
   );

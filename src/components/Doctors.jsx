@@ -8,14 +8,25 @@ import {
   Activity, 
   Smile, 
   Baby, 
+  Sparkles, 
+  ShieldCheck, 
+  Stethoscope, 
   Clock, 
-  Calendar,
   Award,
   CheckCircle2
 } from "lucide-react";
 
 // Specialty Icon Mapping
 const specialtyIcons = {
+  // Dental Specialties (For Dr. Saba)
+  "Cosmetic Dentistry": Sparkles,
+  "Dental Implants": ShieldCheck,
+  "Oral Health Procedures": Stethoscope,
+  "Root Canal Treatment": Activity,
+  "Teeth Whitening": Smile,
+  "Orthodontics & Braces": Shield,
+
+  // Neuropsychiatry Specialties (For Dr. Mehwish & Dr. Athiya)
   "Headache": Activity,
   "Seizure Disorder": Brain,
   "Depression, Anxiety & Restlessness": HeartPulse,
@@ -29,8 +40,8 @@ const specialtyIcons = {
   "Pain Management": HeartPulse
 };
 
-// Common specialties list for ALL doctors
-const commonSpecialties = [
+// Neuropsychiatry Specialties
+const neuropsychiatrySpecialties = [
   "Headache",
   "Seizure Disorder",
   "Depression, Anxiety & Restlessness",
@@ -44,6 +55,16 @@ const commonSpecialties = [
   "Pain Management"
 ];
 
+// Dental Specialties
+const dentalSpecialties = [
+  "Cosmetic Dentistry",
+  "Dental Implants",
+  "Oral Health Procedures",
+  "Root Canal Treatment",
+  "Teeth Whitening",
+  "Orthodontics & Braces"
+];
+
 const doctors = [
   {
     id: "saba",
@@ -51,11 +72,11 @@ const doctors = [
     degree: "BDS, MDS (Dental)",
     role: "Dental Surgeon",
     exp: "10+ Years Experience",
-    bio: "Expert in cosmetic dentistry, dental implants, and oral health procedures.",
+    bio: "Expert in cosmetic dentistry, dental implants, and comprehensive oral health procedures.",
     reg: "Reg. No.: Dental Specialist",
     img: "/images/saba.jpeg",
-    specialties: commonSpecialties,
-    // Availability intentionally omitted
+    specialties: dentalSpecialties,
+    // Availability intentionally removed for Dr. Saba
   },
   {
     id: "mehwish",
@@ -65,7 +86,7 @@ const doctors = [
     exp: "Ex-Registrar SMHS Hospital Srinagar",
     reg: "Reg. No.: 15924",
     img: "/images/mehvish.jpeg",
-    specialties: commonSpecialties,
+    specialties: neuropsychiatrySpecialties,
     availability: [
       { day: "Monday", time: "10:00 AM Onwards" },
       { day: "Saturday", time: "10:00 AM Onwards" }
@@ -79,7 +100,7 @@ const doctors = [
     exp: "Ex-Registrar SMHS Hospital Srinagar",
     reg: "Reg. No.: 5918",
     img: "/images/atiya.jpeg",
-    specialties: commonSpecialties,
+    specialties: neuropsychiatrySpecialties,
     availability: [
       { day: "Wednesday", time: "10:00 AM Onwards" },
       { day: "Sunday", time: "10:00 AM Onwards" }
@@ -168,7 +189,7 @@ export default function Doctors() {
                   </div>
                 </div>
 
-                {/* Availability Section (Only renders if doctor has availability) */}
+                {/* Availability Section (Only for doctors with availability) */}
                 {doc.availability && (
                   <div className="mt-4 pt-3 border-t border-slate-100">
                     <h4 className="text-[11px] font-bold text-blue-600 uppercase tracking-wider mb-2 text-center">
