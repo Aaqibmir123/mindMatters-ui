@@ -8,17 +8,18 @@ export default function Footer() {
           
            {/* Brand Info */}
            <div className="space-y-4">
-             <div className="flex items-center gap-2">
-<img 
+<div className="flex items-center gap-3">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center">
+                <img 
                   src="/images/logo.png" 
                   alt="NDPS Clinic Logo" 
-                  className="w-10 h-10 object-contain"
+                  className="w-16 h-16 object-contain"
                 />
-                <div>
-                  <span className="font-bold text-lg text-white block leading-tight">NDPS</span>
-                  <span className="text-[10px] text-cyan-400 font-semibold tracking-wider block">CLINIC</span>
-                </div>
-             </div>
+              </div>
+              <div>
+                <span className="font-bold text-lg text-white block leading-tight">Mind Matters NDPS CLINIC</span>
+              </div>
+            </div>
             <p className="text-xs text-slate-400 max-w-sm leading-relaxed">
               We are committed to providing exceptional healthcare with compassion and excellence for your family.
             </p>

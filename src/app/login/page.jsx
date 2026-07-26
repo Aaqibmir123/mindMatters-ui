@@ -38,13 +38,13 @@ export default function LoginPage() {
         <div className="bg-white p-8 rounded-2xl shadow-xl border border-slate-200">
            {/* Header */}
            <div className="text-center mb-8">
-             <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-               <img 
-                 src="/images/logo.png" 
-                 alt="MindMatters Care Clinic Logo" 
-                 className="w-14 h-14 object-contain"
-               />
-             </div>
+<div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <img 
+                  src="/images/logo.png" 
+                  alt="MindMatters Care Clinic Logo" 
+                  className="w-16 h-16 object-contain"
+                />
+              </div>
              <h2 className="text-2xl font-bold text-blue-900">Admin Login</h2>
              <p className="text-sm text-slate-500 mt-2">Welcome back! Please login to continue.</p>
            </div>

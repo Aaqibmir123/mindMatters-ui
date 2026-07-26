@@ -77,7 +77,7 @@ export default function Sidebar({ user, onLogout }) {
 <img 
                   src="/images/logo.png" 
                   alt="NDPS Clinic Logo" 
-                  className="w-10 h-10 object-contain"
+                  className="w-16 h-16 object-contain"
                 />
                 <div>
                   <h2 className="text-xl font-bold">NDPS</h2>

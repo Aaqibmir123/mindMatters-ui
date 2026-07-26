@@ -18,13 +18,13 @@ export default function Hero() {
             {/* Highlighted Welcome Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-cyan-500/10 border border-cyan-200/80 shadow-xs backdrop-blur-md">
               <Sparkles className="w-4 h-4 text-cyan-600 animate-pulse" />
-              <span className="text-xs sm:text-sm font-bold bg-gradient-to-r from-cyan-700 to-blue-800 bg-clip-text text-transparent uppercase tracking-wider">
+<span className="text-lg sm:text-xl font-extrabold font-serif bg-gradient-to-r from-cyan-700 to-blue-800 bg-clip-text text-transparent uppercase tracking-wider">
                 Welcome to Mind Matters NDPS Clinic
               </span>
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.15] tracking-tight">
+<h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-[1.15] tracking-tight">
               Your Mental Health is Our <span className="relative inline-block text-cyan-600">
                 Priority
                 <svg className="absolute -bottom-2 left-0 w-full h-2 text-cyan-400/40" viewBox="0 0 100 20" preserveAspectRatio="none">

@@ -46,7 +46,7 @@ const neuropsychiatrySpecialties = [
 const doctors = [
   {
     id: "saba",
-    name: "Dr. Saba Younis Bhat",
+    name: "Dr. Sabah Younis Bhat",
     degree: "MBBS (GMC Srinagar), MD Psychiatry (GMC Srinagar)",
     role: "Assistant Professor (AFSMS, Faridabad)",
     exp: "Consultant Psychiatrist and De-addiction Specialist",

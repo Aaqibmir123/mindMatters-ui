@@ -10,17 +10,19 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
          {/* Logo */}
-         <div className="flex items-center gap-2">
-            <img 
-              src="/images/logo.png" 
-              alt="NDPS Clinic Logo" 
-              className="w-10 h-10 object-contain"
-            />
+<div className="flex items-center gap-3">
+            <div className="w-16 h-16 rounded-full flex items-center justify-center">
+              <img 
+                src="/images/logo.png" 
+                alt="NDPS Clinic Logo" 
+                className="w-16 h-16 object-contain"
+              />
+            </div>
             <div>
-              <span className="font-bold text-xl text-blue-900 block leading-tight"> Mind Matters NDPS  CLINIC</span>
+              <span className="font-bold text-xl text-blue-900 block leading-tight"> MIND MATTERS NDPS  CLINIC</span>
               {/* <span className="text-[10px] text-cyan-600 font-semibold tracking-wider block uppercase">CLINIC</span> */}
             </div>
-         </div>
+          </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8 font-medium text-slate-600 text-sm">
