@@ -71,18 +71,20 @@ export default function Sidebar({ user, onLogout }) {
         ${isMobileOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
       `}>
         <div className="flex flex-col h-full">
-          {/* Header */}
-          <div className="p-6 border-b border-blue-800/50">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-                <LayoutDashboard className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h2 className="text-xl font-bold">MindMatters</h2>
-                <p className="text-xs text-blue-300">Admin Panel</p>
-              </div>
-            </div>
-          </div>
+           {/* Header */}
+           <div className="p-6 border-b border-blue-800/50">
+             <div className="flex items-center gap-3">
+               <img 
+                 src="/images/logo.png" 
+                 alt="MindMatters Care Clinic Logo" 
+                 className="w-10 h-10 object-contain"
+               />
+               <div>
+                 <h2 className="text-xl font-bold">MindMatters</h2>
+                 <p className="text-xs text-blue-300">Admin Panel</p>
+               </div>
+             </div>
+           </div>
 
           {/* Navigation */}
           <nav className="flex-1 p-4">

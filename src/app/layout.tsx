@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "MindMatters Care Clinic",
   description: "Multi-Specialty Healthcare Center providing world-class medical services",
+  icons: {
+    icon: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({

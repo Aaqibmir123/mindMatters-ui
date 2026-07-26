@@ -6,19 +6,19 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 border-b border-slate-800 pb-12">
           
-          {/* Brand Info */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="bg-blue-600 p-2 rounded-lg text-white">
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
-                </svg>
-              </div>
-              <div>
-                <span className="font-bold text-lg text-white block leading-tight">MindMatters</span>
-                <span className="text-[10px] text-cyan-400 font-semibold tracking-wider block">CARE CLINIC</span>
-              </div>
-            </div>
+           {/* Brand Info */}
+           <div className="space-y-4">
+             <div className="flex items-center gap-2">
+               <img 
+                 src="/images/logo.png" 
+                 alt="MindMatters Care Clinic Logo" 
+                 className="w-10 h-10 object-contain"
+               />
+               <div>
+                 <span className="font-bold text-lg text-white block leading-tight">MindMatters</span>
+                 <span className="text-[10px] text-cyan-400 font-semibold tracking-wider block">CARE CLINIC</span>
+               </div>
+             </div>
             <p className="text-xs text-slate-400 max-w-sm leading-relaxed">
               We are committed to providing exceptional healthcare with compassion and excellence for your family.
             </p>

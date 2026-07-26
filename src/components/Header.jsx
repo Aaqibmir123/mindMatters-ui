@@ -16,16 +16,18 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
-        {/* Logo */}
-        <div className="flex items-center gap-2">
-<div className="bg-blue-600 p-2 rounded-lg text-white">
-            <Plus className="w-6 h-6 rotate-45" />
-          </div>
-          <div>
-<span className="font-bold text-xl text-blue-900 block leading-tight">MindMatters</span>
-          <span className="text-[10px] text-cyan-600 font-semibold tracking-wider block uppercase">CARE CLINIC</span>
-          </div>
-        </div>
+         {/* Logo */}
+         <div className="flex items-center gap-2">
+           <img 
+             src="/images/logo.png" 
+             alt="MindMatters Care Clinic Logo" 
+             className="w-10 h-10 object-contain"
+           />
+           <div>
+             <span className="font-bold text-xl text-blue-900 block leading-tight">MindMatters</span>
+             <span className="text-[10px] text-cyan-600 font-semibold tracking-wider block uppercase">CARE CLINIC</span>
+           </div>
+         </div>
 
         {/* Desktop Navigation */}
 <nav className="hidden md:flex items-center space-x-8 font-medium text-slate-600 text-sm">
