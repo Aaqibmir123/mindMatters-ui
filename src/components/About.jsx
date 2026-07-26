@@ -25,10 +25,10 @@ export default function About() {
           {/* About Content */}
           <div className="lg:col-span-7 space-y-6">
             <div>
-              <span className="text-xs font-bold text-cyan-600 uppercase tracking-widest block mb-1">About Our Clinic</span>
+<span className="text-xs font-bold text-cyan-600 uppercase tracking-widest block mb-1">About Our Clinic</span>
 <h2 className="text-3xl font-bold text-blue-900 leading-snug">
-                MindMatters Care Clinic is a Multi-Specialty Healthcare Center
-              </h2>
+  NDPS Clinic is a Multi-Specialty Healthcare Center
+</h2>
             </div>
             <p className="text-slate-600 leading-relaxed text-sm">
               We are committed to providing world-class medical services with compassion, state-of-the-art infrastructure, and dedicated medical specialists to ensure the best outcomes for you and your family.

@@ -74,15 +74,15 @@ export default function Sidebar({ user, onLogout }) {
            {/* Header */}
            <div className="p-6 border-b border-blue-800/50">
              <div className="flex items-center gap-3">
-               <img 
-                 src="/images/logo.png" 
-                 alt="MindMatters Care Clinic Logo" 
-                 className="w-10 h-10 object-contain"
-               />
-               <div>
-                 <h2 className="text-xl font-bold">MindMatters</h2>
-                 <p className="text-xs text-blue-300">Admin Panel</p>
-               </div>
+<img 
+                  src="/images/logo.png" 
+                  alt="NDPS Clinic Logo" 
+                  className="w-10 h-10 object-contain"
+                />
+                <div>
+                  <h2 className="text-xl font-bold">NDPS</h2>
+                  <p className="text-xs text-blue-300">Clinic & De-Addiction Center</p>
+                </div>
              </div>
            </div>
 

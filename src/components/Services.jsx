@@ -31,9 +31,6 @@ export default function Services() {
                   </div>
                   <h3 className="font-bold text-slate-800 text-sm">{item.title}</h3>
                   <p className="text-xs text-slate-500 leading-relaxed">{item.desc}</p>
-                  <a href="#appointment" className="text-xs font-semibold text-blue-600 inline-flex items-center gap-1 hover:underline pt-1">
-                    Learn More &rarr;
-                  </a>
                 </CardContent>
               </Card>
             );

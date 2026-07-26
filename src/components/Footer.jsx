@@ -9,15 +9,15 @@ export default function Footer() {
            {/* Brand Info */}
            <div className="space-y-4">
              <div className="flex items-center gap-2">
-               <img 
-                 src="/images/logo.png" 
-                 alt="MindMatters Care Clinic Logo" 
-                 className="w-10 h-10 object-contain"
-               />
-               <div>
-                 <span className="font-bold text-lg text-white block leading-tight">MindMatters</span>
-                 <span className="text-[10px] text-cyan-400 font-semibold tracking-wider block">CARE CLINIC</span>
-               </div>
+<img 
+                  src="/images/logo.png" 
+                  alt="NDPS Clinic Logo" 
+                  className="w-10 h-10 object-contain"
+                />
+                <div>
+                  <span className="font-bold text-lg text-white block leading-tight">NDPS</span>
+                  <span className="text-[10px] text-cyan-400 font-semibold tracking-wider block">CLINIC</span>
+                </div>
              </div>
             <p className="text-xs text-slate-400 max-w-sm leading-relaxed">
               We are committed to providing exceptional healthcare with compassion and excellence for your family.
@@ -27,25 +27,25 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="space-y-3">
             <h4 className="font-semibold text-sm text-white">Quick Links</h4>
-            <ul className="space-y-2 text-xs">
-              <li><a href="#home" className="hover:text-white transition">Home</a></li>
-              <li><a href="#about" className="hover:text-white transition">About</a></li>
-              <li><a href="#services" className="hover:text-white transition">Services</a></li>
-              <li><a href="#doctors" className="hover:text-white transition">Doctors</a></li>
-              <li><a href="#contact" className="hover:text-white transition">Contact</a></li>
-            </ul>
+              <ul className="space-y-2 text-xs">
+               <li><a href="#home" className="hover:text-white transition">Home</a></li>
+               <li><a href="#about" className="hover:text-white transition">About</a></li>
+               <li><a href="#services" className="hover:text-white transition">Services</a></li>
+               <li><a href="#dr-waris" className="hover:text-white transition">Dr. Waris</a></li>
+               <li><a href="#doctors" className="hover:text-white transition">Doctors</a></li>
+               <li><a href="#contact" className="hover:text-white transition">Contact</a></li>
+             </ul>
           </div>
 
           {/* Services */}
           <div className="space-y-3">
             <h4 className="font-semibold text-sm text-white">Our Services</h4>
-            <ul className="space-y-2 text-xs">
-              <li><a href="#appointment" className="hover:text-white transition">Book Appointment</a></li>
-              <li><a href="#services" className="hover:text-white transition">Psychiatry</a></li>
-              <li><a href="#services" className="hover:text-white transition">De-Addiction</a></li>
-              <li><a href="#services" className="hover:text-white transition">Dental Care</a></li>
-              <li><a href="#services" className="hover:text-white transition">Counseling</a></li>
-            </ul>
+<ul className="space-y-2 text-xs">
+               <li><a href="#services" className="hover:text-white transition">Psychiatry</a></li>
+               <li><a href="#services" className="hover:text-white transition">De-Addiction</a></li>
+               <li><a href="#services" className="hover:text-white transition">Dental Care</a></li>
+               <li><a href="#services" className="hover:text-white transition">Counseling</a></li>
+             </ul>
           </div>
 
           {/* Contact Info */}
@@ -68,9 +68,9 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
+{/* Bottom Bar */}
         <div className="pt-8 text-center text-xs text-slate-500">
-          <p>© 2026 MindMatters Care Clinic. All Rights Reserved.</p>
+          <p>© 2026 NDPS Clinic. All Rights Reserved.</p>
         </div>
       </div>
 
