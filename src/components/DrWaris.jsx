@@ -98,7 +98,7 @@ const drWaris = {
     },
     {
       day: "Thursday (Full Day)",
-      clinic: "Kantibagh",
+      clinic: "Alkeemiya",
       address: "Kanlibagh, Baramulla",
       phone: ["7006859785"]
     },
@@ -111,7 +111,7 @@ const drWaris = {
     {
       day: "Wednesday",
       clinic: "New Arafath Medicate Bandipora",
-      address: "Near Fish Market, Nampora",
+      address: "Near Fish Market, Nowpora",
       phone: ["7006336261", "9858344090"]
     }
   ]
