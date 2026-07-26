@@ -49,7 +49,7 @@ const doctors = [
     name: "Dr. Saba Younis Bhat",
     degree: "MBBS (GMC Srinagar), MD Psychiatry (GMC Srinagar)",
     role: "Assistant Professor (AFSMS, Faridabad)",
-    exp: "Consultant Psychiatrist",
+    exp: "Consultant Psychiatrist and De-addiction Specialist",
     reg: "Reg. No.: 7498 (JK Medical Council)",
     img: "/images/saba.jpeg",
     specialties: neuropsychiatrySpecialties,
@@ -60,7 +60,7 @@ const doctors = [
     degree: "MBBS (ASCOMS), MD Neuropsychiatry (GMC Srinagar), Life Fellow of IPS",
     role: "Consultant Neuropsychiatrist and De-Addiction Specialist",
     exp: "Ex-Registrar SMHS Hospital Srinagar",
-    reg: "Reg. No.: 15924",
+    reg: "Reg. No.: 7365",
     img: "/images/mehvish.jpeg",
     specialties: neuropsychiatrySpecialties,
     availability: [
