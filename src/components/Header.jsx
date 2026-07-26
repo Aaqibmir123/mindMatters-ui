@@ -17,8 +17,8 @@ export default function Header() {
               className="w-10 h-10 object-contain"
             />
             <div>
-              <span className="font-bold text-xl text-blue-900 block leading-tight">NDPS</span>
-              <span className="text-[10px] text-cyan-600 font-semibold tracking-wider block uppercase">CLINIC</span>
+              <span className="font-bold text-xl text-blue-900 block leading-tight"> Mind Matters NDPS  CLINIC</span>
+              {/* <span className="text-[10px] text-cyan-600 font-semibold tracking-wider block uppercase">CLINIC</span> */}
             </div>
          </div>
 

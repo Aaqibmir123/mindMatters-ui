@@ -8,9 +8,6 @@ import {
   Activity, 
   Smile, 
   Baby, 
-  Sparkles, 
-  ShieldCheck, 
-  Stethoscope, 
   Clock, 
   Award,
   CheckCircle2
@@ -18,15 +15,6 @@ import {
 
 // Specialty Icon Mapping
 const specialtyIcons = {
-  // Dental Specialties (For Dr. Saba)
-  "Cosmetic Dentistry": Sparkles,
-  "Dental Implants": ShieldCheck,
-  "Oral Health Procedures": Stethoscope,
-  "Root Canal Treatment": Activity,
-  "Teeth Whitening": Smile,
-  "Orthodontics & Braces": Shield,
-
-  // Neuropsychiatry Specialties (For Dr. Mehwish & Dr. Athiya)
   "Headache": Activity,
   "Seizure Disorder": Brain,
   "Depression, Anxiety & Restlessness": HeartPulse,
@@ -55,28 +43,16 @@ const neuropsychiatrySpecialties = [
   "Pain Management"
 ];
 
-// Dental Specialties
-const dentalSpecialties = [
-  "Cosmetic Dentistry",
-  "Dental Implants",
-  "Oral Health Procedures",
-  "Root Canal Treatment",
-  "Teeth Whitening",
-  "Orthodontics & Braces"
-];
-
 const doctors = [
   {
     id: "saba",
     name: "Dr. Saba Younis Bhat",
-    degree: "BDS, MDS (Dental)",
-    role: "Dental Surgeon",
-    exp: "10+ Years Experience",
-    bio: "Expert in cosmetic dentistry, dental implants, and comprehensive oral health procedures.",
-    reg: "Reg. No.: Dental Specialist",
+    degree: "MBBS (GMC Srinagar), MD Psychiatry (GMC Srinagar)",
+    role: "Assistant Professor (AFSMS, Faridabad)",
+    exp: "Consultant Psychiatrist",
+    reg: "Reg. No.: 7498 (JK Medical Council)",
     img: "/images/saba.jpeg",
-    specialties: dentalSpecialties,
-    // Availability intentionally removed for Dr. Saba
+    specialties: neuropsychiatrySpecialties,
   },
   {
     id: "mehwish",
@@ -158,10 +134,6 @@ export default function Doctors() {
                   </div>
 
                   <p className="text-xs text-slate-500 font-medium mt-2">{doc.exp}</p>
-                  
-                  <p className="text-xs text-slate-600 mt-2 leading-relaxed">
-                    {doc.bio}
-                  </p>
 
                   <p className="text-[11px] text-slate-400 font-medium mt-1">
                     {doc.reg}
@@ -189,7 +161,7 @@ export default function Doctors() {
                   </div>
                 </div>
 
-                {/* Availability Section (Only for doctors with availability) */}
+                {/* Availability Section */}
                 {doc.availability && (
                   <div className="mt-4 pt-3 border-t border-slate-100">
                     <h4 className="text-[11px] font-bold text-blue-600 uppercase tracking-wider mb-2 text-center">

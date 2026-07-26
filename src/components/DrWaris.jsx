@@ -99,7 +99,7 @@ phone: ["+91 7889449550", "+91 7889566607"]
     {
       day: "Thursday (Full Day)",
       clinic: "Alkeemiya",
-      address: "Kanlibagh, Baramulla",
+      address: "Kantibagh, Baramulla",
 phone: ["+91 7006859785"]
     },
     {
