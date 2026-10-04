@@ -35,7 +35,7 @@ export default function Hero() {
 
             {/* Subtext */}
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              We provide comprehensive psychiatric, dental, and de-addiction services with experienced specialists, 
+              We provide comprehensive psychiatric, mental, and de-addiction services with experienced specialists, 
               modern facilities, and compassionate care tailored for you and your family.
             </p>
 
